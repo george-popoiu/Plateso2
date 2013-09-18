@@ -1,0 +1,72 @@
+﻿<Window x:Class="Plateso2.Modules.ComparisonWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Compare" Height="700" Width="600" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" WindowStartupLocation="CenterScreen">
+    <Grid Name="gridRoot">
+        
+        <Border CornerRadius="15" Background="{DynamicResource TopBorderBrush}"/>
+
+        <Grid Margin="0,9.3,0,0" Name="gridLayout">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.88*"/>
+            </Grid.RowDefinitions>
+            
+            <!--Top-->
+            <Grid Grid.Row="0" Name="gridTop" Background="{DynamicResource gradient_top}" MouseLeftButtonDown="gridTop_MouseLeftButtonDown">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="0.6*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Name="stackTopButtons" Margin="0,0,10,0" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.Row="0">
+                    <Button Name="butExit" Style="{DynamicResource button_common}" Click="butExit_Click">
+                        <Image Height="15" Width="15" Source="pack://application:,,,/Images/exit.png"/>
+                    </Button>
+                    <TextBlock Width="{Binding Path=Width, Source={StaticResource TextBlockWidth}, Mode=OneWay}"/>
+                    <Button Name="butMinimize" Style="{DynamicResource button_common}" Click="butMinimize_Click">
+                        <Image Height="15" Width="15" Source="pack://application:,,,/Images/minimize.png"/>
+                    </Button>
+                </StackPanel>
+                
+                <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Text="Compare documents"/>
+
+            </Grid>
+            
+            <!--Middle-->
+            <Grid Grid.Row="1" Name="gridMiddle">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="0.15*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.13*"/>
+                    <RowDefinition Height="0.06*"/>
+                    <RowDefinition Height="0.7*"/>
+                    <RowDefinition Height="0.11*"/>
+                </Grid.RowDefinitions>
+                
+                <StackPanel Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Height="Auto">                    
+                    <TextBlock Text="Report duplicate chunks larger than :"/>
+                    
+                    <TextBox Style="{DynamicResource style_textb}" Margin="10" Name="tbLimit"/>                    
+                </StackPanel>
+                
+                <TextBlock Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Text="Select documents :"/>
+                
+                <ListBox Name="lbDocs" Grid.Column="1" Grid.Row="2" SelectionMode="Extended" Margin="10"/>
+                
+                <Button Name="butCompare" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center"
+                        Style="{DynamicResource button_common}" Content="Compare" Click="butCompare_Click" Width="80" Height="30"/>
+                
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>

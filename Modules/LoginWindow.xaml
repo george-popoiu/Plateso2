@@ -1,0 +1,208 @@
+﻿<Window x:Class="Plateso2.Modules.LoginWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Login" Height="550" Width="600" AllowsTransparency="True" Background="{x:Null}" WindowStyle="None">
+    
+    <Window.Resources>
+        
+        <!-- Button Template Begins -->        
+        <ControlTemplate TargetType="{x:Type Button}" x:Key="template_button">
+            <Grid>
+                <Rectangle RadiusX="5" RadiusY="5" Fill="{TemplateBinding Background}" />
+                <ContentPresenter Margin="{TemplateBinding Padding}" VerticalAlignment="Center" HorizontalAlignment="Center"/>                                
+            </Grid>            
+        </ControlTemplate>
+        <!-- Button Template Ends -->
+        
+        <!-- Button Style Begins -->
+        <Style TargetType="{x:Type Button}" x:Key="style_button">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Cursor" Value="Hand"/>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform CenterX="0.5" CenterY="0.5" ScaleX="1.1" ScaleY="1.1"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <!-- Button Style Ends -->
+        
+        <!-- TextBox template Begins -->
+        <ControlTemplate x:Key="template_textb" TargetType="{x:Type TextBox}">
+            <Grid>
+                <Rectangle RadiusX="5" RadiusY="5" Fill="White"/>
+                <ScrollViewer VerticalAlignment="Center" Margin="{TemplateBinding Padding}" Name="PART_ContentHost"/>
+            </Grid>
+        </ControlTemplate>
+        <!-- TextBox Template Ends -->
+        
+        <!-- TextBox Style Begins -->
+        <Style x:Key="style_textb" TargetType="{x:Type TextBox}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="BitmapEffect">
+                        <Setter.Value>
+                            <OuterGlowBitmapEffect GlowColor="#075284" GlowSize="5" Opacity="1"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsFocused" Value="true">
+                    <Setter Property="BitmapEffect">
+                        <Setter.Value>
+                            <OuterGlowBitmapEffect GlowColor="#075284" GlowSize="5" Opacity="0.5"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <!-- TextBox Style Ends -->
+        
+        <!-- PasswordBox Template Begins -->
+        <ControlTemplate TargetType="{x:Type PasswordBox}" x:Key="template_passwordb">
+            <Grid>
+                <Rectangle RadiusX="5" RadiusY="5" Fill="White"/>
+                <ScrollViewer VerticalAlignment="Center" Margin="{TemplateBinding Padding}" Name="PART_ContentHost"/>
+            </Grid>
+        </ControlTemplate>
+        <!-- PasswordBox Template Ends -->
+        
+        <!-- PasswordBox Style Begins -->
+        <Style x:Key="style_passwordb" TargetType="{x:Type PasswordBox}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="BitmapEffect">
+                        <Setter.Value>
+                            <OuterGlowBitmapEffect GlowColor="#075284" GlowSize="5" Opacity="1"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="IsFocused" Value="true">
+                    <Setter Property="BitmapEffect">
+                        <Setter.Value>
+                            <OuterGlowBitmapEffect GlowColor="#075284" GlowSize="5" Opacity="0.5"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <!-- PasswordBox Style Ends -->
+        
+        <!-- TextStyle -->
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="TrebuchetMS"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Foreground" Value="#075284"/>
+        </Style>
+        <!-- TextStyle -->
+
+    </Window.Resources>
+    
+    <Grid Name="grid_Root">
+        <Border Background="#CFCECF" CornerRadius="15"/>
+        <Grid Margin="0,10,0,0" Name="grid_Layout">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.15*"/>
+                <RowDefinition Height="0.85*"/>
+                <RowDefinition Height="0.1*"/>
+            </Grid.RowDefinitions>
+            <!-- Top Begins -->
+            <Grid Grid.Row="0" Name="header_Grid" MouseLeftButtonDown="header_Grid_MouseDown">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="0.6*"/>
+                </Grid.RowDefinitions>
+                <Grid.Background>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0.15" Color="#CFCECF" />
+                        <GradientStop Offset="1" Color="#A8A8A8"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <StackPanel FlowDirection="RightToLeft" Orientation="Horizontal" Grid.Row="0" Margin="0,0,10,0">
+                    <Button Name="button_close" Click="button_close_Click" Style="{StaticResource style_button}" Template="{StaticResource template_button}" Padding="5" VerticalAlignment="Center">
+                        <Button.Content>
+                            <Image Width="15" Height="15" Source="pack://application:,,,/Images/exit.png"/>                            
+                        </Button.Content>
+                    </Button>
+                    <TextBlock Width="10"/>
+                    <Button Name="button_minimize" Click="button_minimize_Click" Style="{StaticResource style_button}" Template="{StaticResource template_button}" Padding="5" VerticalAlignment="Center" Margin="0,0,5,0">
+                        <Button.Content>
+                            <Image Height="15" Width="15" Source="pack://application:,,,/Images/minimize.png"/>
+                        </Button.Content>
+                    </Button>
+                </StackPanel>
+                <TextBlock Name="text_title" Grid.Row="1" VerticalAlignment="Center" FontFamily="TrebuchetMS" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Foreground="#075284">
+                    Login
+                </TextBlock>
+            </Grid>
+            <!-- Top Ends -->               
+            
+            <!-- Middle Begins -->
+            <Grid Grid.Row="1" Name="grid_middle" Background="#D8D8D8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="0.6*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.2*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.3*"/>
+                </Grid.RowDefinitions>
+                <Image Width="100" Height="100" Margin="10" Grid.Row="0" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" Source="pack://application:,,,/Images/LogoPlateso.png"/>
+                
+                <StackPanel Grid.Row="1" Name="stack_username" Grid.Column="1">
+                    <TextBlock Name="text_username" Text="Username :" FontFamily="TrebuchetMS" Foreground="#075284" FontSize="16"/>
+                    <TextBox Name="textb_username" Margin="5"  Style="{StaticResource style_textb}" Template="{StaticResource template_textb}" ToolTip="Username is case insensitive"/>
+                </StackPanel>
+                
+                <StackPanel Grid.Row="2" Grid.Column="1" Name="stack_password">
+                    <TextBlock Name="text_password" Text="Password :"/>
+                    <PasswordBox Name="textb_password" Margin="5" Template="{StaticResource template_passwordb}" Style="{StaticResource style_passwordb}" ToolTip="Password is case sensitive"/>                    
+                </StackPanel>
+                
+                <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Name="stack_login">
+                    <Button Margin="0" Name="button_login" Style="{StaticResource style_button}" Template="{StaticResource template_button}" Width="35" Height="35" VerticalAlignment="Top" ToolTip="Log in" Click="button_login_Click">
+                        <Button.Content>
+                            <Image Source="pack://application:,,,/Images/login.png" Width="25" Height="25"/>
+                        </Button.Content>
+                    </Button>
+                    <Button Margin="10,0,0,0" VerticalAlignment="Top" Style="{StaticResource style_button}" Template="{StaticResource template_button}" Height="35" Width="35" Name="button_newuser" Click="button_newuser_Click" ToolTip="New user">
+                        <Button.Content>
+                            <Image Height="25" Width="25" Source="pack://application:,,,/Images/newuser.png"/>
+                        </Button.Content>
+                    </Button>
+                    <Button Margin="10,0,0,0" VerticalAlignment="Top" Style="{StaticResource style_button}" Template="{StaticResource template_button}" Height="35" Width="35" Name="button_changepassword" ToolTip="Change password" Click="button_changepassword_Click">
+                        <Button.Content>
+                            <Image Height="25" Width="25" Source="pack://application:,,,/Images/change_password.png"/>
+                        </Button.Content>
+                    </Button>
+                    <Button Margin="10,0,0,0" VerticalAlignment="Top" Style="{StaticResource style_button}" Template="{StaticResource template_button}" Height="35" Width="35" Name="buttonDeleteUser" ToolTip="Delete user" Click="buttonDeleteUser_Click">
+                        <Image Height="25" Width="25" Source="pack://application:,,,/Images/delete_user.png"/>
+                    </Button>
+                </StackPanel>
+                
+                <TextBlock Grid.Row="4" Grid.Column="1" Text="plateso.support@gmail.com" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            
+            </Grid>
+
+            <Rectangle Stroke="Black" Grid.Row="1" VerticalAlignment="Top" Height="0.25"/>
+            <Rectangle Stroke="Black" Grid.Row="1" VerticalAlignment="Bottom" Height="0.25"/>           
+            <!-- Middle Ends -->
+            
+            <!-- Bottom Begins -->
+            <Grid Name="grid_bottom" Background="#A8A8A8" Grid.Row="2">
+                <TextBlock Name="text_bottom" Foreground="#075284" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15"/>
+            </Grid>
+            <!-- Bottom Ends -->
+            
+        </Grid>
+    </Grid>
+</Window>

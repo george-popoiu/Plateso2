@@ -1,0 +1,59 @@
+﻿<Window x:Class="Plateso2.Modules.MessageWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Message" Height="330" Width="350" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}">
+    <Window.Resources>
+        <ControlTemplate TargetType="{x:Type Button}" x:Key="template">                           
+            <Grid Background="{x:Null}">
+                <Rectangle RadiusX="5" RadiusY="5" Fill="{TemplateBinding Background}">                    
+                </Rectangle>
+                <ContentPresenter Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Grid>                                    
+        </ControlTemplate>        
+        
+        <Style x:Key="bs" TargetType="{x:Type Button}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                        <GradientStop Offset="0.1" Color="#F8F8F8"/>
+                        <GradientStop Offset="1" Color="#C2C2C2"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Background" Value="#95A7C6"/>
+                </Trigger>                         
+            </Style.Triggers>
+        </Style>
+        
+    </Window.Resources>      
+    
+    <Grid>        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Border BorderThickness="5" CornerRadius="20" Background="#B0B0B0" Grid.RowSpan="3" MouseDown="Border_MouseDown"/>
+        
+        <TextBlock Grid.Row="0" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10" Name="Caption"/>
+
+        <Grid Grid.Row="2" Margin="5,0,5,0">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0.1" Color="#D2D2D2"/>
+                    <GradientStop Offset="1" Color="#AFB1AE"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
+        <Button Grid.Row="2" Name="OK" Content="Ok" Click="OK_Click" Template="{StaticResource template}" Margin="0,5,20,5" VerticalAlignment="Center" HorizontalAlignment="Right" Width="30" FontSize="17" MouseEnter="OK_MouseEnter" MouseLeave="OK_MouseLeave" Style="{StaticResource bs}">                        
+        </Button>
+        
+        <Grid Grid.Row="1" Background="#DDE4EA" Margin="5,0,5,0">
+            <TextBlock Name="text" Margin="20" TextWrapping="Wrap" FontSize="17"/>
+        </Grid>
+    </Grid>
+</Window>

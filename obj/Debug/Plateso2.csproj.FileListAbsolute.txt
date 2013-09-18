@@ -1,0 +1,78 @@
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\ResolveAssemblyReference.cache
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Modules\MessageWindow.baml
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Modules\MessageWindow.g.cs
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\App.g.cs
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Plateso2_MarkupCompile.cache
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Plateso2.g.resources
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Plateso2.Properties.Resources.resources
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Plateso2.csproj.GenerateResource.Cache
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\bin\Debug\Plateso2.exe
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\bin\Debug\Plateso2.pdb
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Plateso2.exe
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Plateso2.pdb
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Window1.baml
+D:\Programe\Visual Studio 2008\VC#\CSharpProjects\Plateso2\Plateso2\obj\Debug\Window1.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Plateso2.exe
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Plateso2.pdb
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\Plateso2.exe
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\Plateso2.pdb
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\ResolveAssemblyReference.cache
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\MessageWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Window1.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\MessageWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Window1.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\App.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Plateso2_MarkupCompile.cache
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Plateso2.g.resources
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Plateso2.Properties.Resources.resources
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Plateso2.csproj.GenerateResource.Cache
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\LoginWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\LoginWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\NewUser.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\NewUser.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\App.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\MySql.Data.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\ChangePassword.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\ChangePassword.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\FontBox-0.1.0-dev.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\IKVM.GNU.Classpath.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\IKVM.Runtime.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\PDFBox-0.7.3.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\lucene-core-2.0.0.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\bcprov-jdk14-132.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\lucene-demos-2.0.0.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\bcmail-jdk14-132.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\DocReader.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\DocReader.pdb
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\DocxReader.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\DocxReader.pdb
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\DownloadWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\DownloadWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\GDocsWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\GDocsWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\DocListExport.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\Google.GData.AccessControl.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\Google.GData.Client.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\Google.GData.Documents.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\Google.GData.Extensions.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\PatternSearchWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\PatternSearchWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\KMP\KMPWindowViewer.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\KMP\KMPWindowViewer.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\WindowSave.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\WindowSave.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\EditDistanceWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\EditDistanceWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\DocumentViewerWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\DocumentViewerWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\DeleteWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\DeleteWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\ComparisonWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\ComparisonWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\Comparison\ComparisonWindowInterpreter.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\Comparison\ComparisonWindowInterpreter.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\DeleteUserWindow.baml
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\obj\Debug\Modules\DeleteUserWindow.g.cs
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\PlugInLib.dll
+D:\Programe\VSProjects\C#\Plateso2\Plateso2\bin\Debug\PlugInLib.pdb

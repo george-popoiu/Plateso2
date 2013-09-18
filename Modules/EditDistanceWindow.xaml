@@ -1,0 +1,72 @@
+﻿<Window x:Class="Plateso2.Modules.EditDistanceWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Edit Distance" Height="600" Width="550" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" WindowStartupLocation="CenterScreen">
+    <Grid Name="gridRoot">
+
+        <Border CornerRadius="15" Background="{DynamicResource TopBorderBrush}"/>
+
+        <Grid Margin="0,9.3,0,0" Name="gridLayout">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.12*"/>
+                <RowDefinition Height="0.88*"/>
+            </Grid.RowDefinitions>
+            
+            <!--Top-->
+            <Grid Grid.Row="0" Name="gridTop" Background="{DynamicResource gradient_top}" MouseLeftButtonDown="gridTop_MouseLeftButtonDown">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="0.6*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Name="stackTopButtons" Margin="0,0,10,0" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.Row="0">
+                    <Button Name="butExit" Style="{DynamicResource button_common}" Click="butExit_Click">
+                        <Image Height="15" Width="15" Source="pack://application:,,,/Images/exit.png"/>
+                    </Button>
+                    <TextBlock Width="{Binding Path=Width, Source={StaticResource TextBlockWidth}, Mode=OneWay}"/>
+                    <Button Name="butMinimize" Style="{DynamicResource button_common}" Click="butMinimize_Click">
+                        <Image Height="15" Width="15" Source="pack://application:,,,/Images/minimize.png"/>
+                    </Button>
+                </StackPanel>
+                
+                <TextBlock Text="Minimum edit distance" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+
+            </Grid>
+            
+            <!--Middle-->
+            <Grid Grid.Row="1" Name="gridMiddle">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="0.15*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="0.75*"/>
+                    <RowDefinition Height="0.15*"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Text="Select documents :" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center"/>
+                
+                <ListBox Name="lbDocuments" Grid.Column="1" Grid.Row="1" SelectionMode="Extended"/>
+                
+                <StackPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal"
+                            Width="Auto" Height="Auto">
+                    
+                    <Button Name="butOk" Content="Ok" Style="{DynamicResource button_common}" Click="butOk_Click" Width="60"/>
+                    
+                    <TextBlock Width="{Binding Path=Width, Source={StaticResource TextBlockWidth}, Mode=OneWay}"/>
+                    
+                    <Button Name="butCancel" Content="Cancel" Style="{DynamicResource button_common}" Click="butCancel_Click" Width="60"/>
+                    
+                </StackPanel>
+                
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+</Window>

@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDA3E87B-F972-4AB8-A68C-485548FA7B81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Plateso2</RootNamespace>
+    <AssemblyName>Plateso2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>LogoPlatesoIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocListExport, Version=1.4.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\GDocs\DocListExport.dll</HintPath>
+    </Reference>
+    <Reference Include="DocReader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DocReader\DocReader\bin\Debug\DocReader.dll</HintPath>
+    </Reference>
+    <Reference Include="DocxReader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DocxReader\DocxReader\bin\Debug\DocxReader.dll</HintPath>
+    </Reference>
+    <Reference Include="FontBox-0.1.0-dev, Version=0.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\PDFBox-0.7.3\bin\FontBox-0.1.0-dev.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.AccessControl, Version=1.4.0.2, Culture=neutral, PublicKeyToken=b4b8eb9a7afc8328, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\GDocs\Google.GData.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Client, Version=1.4.0.2, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\GDocs\Google.GData.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Documents, Version=1.4.0.2, Culture=neutral, PublicKeyToken=099e9a853da5b089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\GDocs\Google.GData.Documents.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.GData.Extensions, Version=1.4.0.2, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\GDocs\Google.GData.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\SharpZipLib_0860_Bin\net-20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.GNU.Classpath, Version=0.30.0.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\PDFBox-0.7.3\bin\IKVM.GNU.Classpath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime, Version=0.30.0.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\PDFBox-0.7.3\bin\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PDFBox-0.7.3, Version=0.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Plateso2_Resources\PDFBox-0.7.3\bin\PDFBox-0.7.3.dll</HintPath>
+    </Reference>
+    <Reference Include="PlugInLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PlugInLib\PlugInLib\bin\Debug\PlugInLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Modules\ChangePassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\ComparisonWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\Comparison\ComparisonWindowInterpreter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\DeleteUserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\DeleteWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\DocumentViewerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\DownloadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\EditDistanceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\GDocsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\KMP\KMPWindowViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\MessageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\NewUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\PatternSearchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\WindowSave.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modules\ChangePassword.xaml.cs">
+      <DependentUpon>ChangePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ComparisonWindow.xaml.cs">
+      <DependentUpon>ComparisonWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Comparison\ComparisonGridInterpreter.cs" />
+    <Compile Include="Modules\Comparison\ComparisonTest.cs" />
+    <Compile Include="Modules\Comparison\ComparisonTester.cs" />
+    <Compile Include="Modules\Comparison\ComparisonTestResult.cs" />
+    <Compile Include="Modules\Comparison\ComparisonWindowInterpreter.xaml.cs">
+      <DependentUpon>ComparisonWindowInterpreter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Constants.cs" />
+    <Compile Include="Modules\DeleteUserWindow.xaml.cs">
+      <DependentUpon>DeleteUserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DeleteWindow.xaml.cs">
+      <DependentUpon>DeleteWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DocumentClass.cs" />
+    <Compile Include="Modules\DocumentReader.cs" />
+    <Compile Include="Modules\DocumentViewerWindow.xaml.cs">
+      <DependentUpon>DocumentViewerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DownloadWindow.xaml.cs">
+      <DependentUpon>DownloadWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditDistanceWindow.xaml.cs">
+      <DependentUpon>EditDistanceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\EditDistance\EditGridIterpreter.cs" />
+    <Compile Include="Modules\EditDistance\EditTest.cs" />
+    <Compile Include="Modules\EditDistance\EditTester.cs" />
+    <Compile Include="Modules\GDocsWindow.xaml.cs">
+      <DependentUpon>GDocsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\KMP\KMPGridViewer.cs" />
+    <Compile Include="Modules\KMP\KMPTest.cs" />
+    <Compile Include="Modules\KMP\KMPTester.cs" />
+    <Compile Include="Modules\KMP\KMPWindowViewer.xaml.cs">
+      <DependentUpon>KMPWindowViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Message.cs" />
+    <Compile Include="Modules\MessageWindow.xaml.cs">
+      <DependentUpon>MessageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\MyTreeViewItem.cs" />
+    <Compile Include="Modules\NewUser.xaml.cs">
+      <DependentUpon>NewUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PatternSearchWindow.xaml.cs">
+      <DependentUpon>PatternSearchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\PlatesoEasyEvents.cs" />
+    <Compile Include="Modules\PlatesoEasyMethods.cs" />
+    <Compile Include="Modules\PlugInContext.cs" />
+    <Compile Include="Modules\Test.cs" />
+    <Compile Include="Modules\WindowSave.xaml.cs">
+      <DependentUpon>WindowSave.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\exit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LogoPlateso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\newuser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LogoPlatesoIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\change_password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\doc_docx_doc.png" />
+    <Resource Include="Images\odt_doc.png" />
+    <Resource Include="Images\pdf_doc.png" />
+    <Resource Include="Images\txt_doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\doc_upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\doc_download.png" />
+    <Resource Include="Images\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\doc_delete.png" />
+    <Resource Include="Images\doc_delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\google_docs.png" />
+    <Resource Include="Images\google_docs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\edit_distance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pattern_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\comparison.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delete_user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
